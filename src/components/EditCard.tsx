@@ -1,11 +1,9 @@
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import { FunctionComponent, useContext, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import Card from "../interfaces/Card";
-import { Theme } from "../interfaces/Theme";
 import { getCard } from "../services/cardsService";
-import { getTheme } from "../services/themeService";
 import CardForm from "./CardForm";
 import CardThemePicker from "./CardThemePicker";
 import CustomeCard from "./CustomeCard";
@@ -13,7 +11,6 @@ import CustomeCard from "./CustomeCard";
 interface EditCardProps { }
 
 const EditCard: FunctionComponent<EditCardProps> = () => {
-  const navigate = useNavigate();
   const { userData, setUserData } = useContext(UserContext);
   const params = useParams();
   const [cardId, setCardId] = useState<number>(params.cardId ? Number(params.cardId) : -1);
@@ -41,7 +38,7 @@ const EditCard: FunctionComponent<EditCardProps> = () => {
   }
 
   useEffect(() => {
-    cardId > 0 && cardId != card.id && fetchCard();
+    cardId > 0 && cardId !== card.id && fetchCard();
   }, [card]);
 
   return (

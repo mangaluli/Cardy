@@ -1,7 +1,7 @@
-import React, { FunctionComponent, useContext, useEffect } from 'react';
+import { FunctionComponent, useContext, useEffect } from 'react';
 import { Input, Text, FormControl, FormLabel, Button, VStack, Stack, Textarea, Flex, Box } from '@chakra-ui/react';
 import Card from '../interfaces/Card';
-import { addCard, editCard } from '../services/cardsService';
+import { editCard } from '../services/cardsService';
 import { useNavigate } from 'react-router-dom';
 import { createCard } from '../services/cardEditService';
 import { UserContext } from '../context/UserContext';

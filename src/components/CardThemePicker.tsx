@@ -1,4 +1,4 @@
-import { Box, Text, Flex, HStack, useColorModeValue, VStack } from "@chakra-ui/react";
+import { Box, Text, Flex, VStack } from "@chakra-ui/react";
 import { FunctionComponent, useEffect, useState } from "react";
 import { Theme } from "../interfaces/Theme";
 import { getThemes } from "../services/themeService";

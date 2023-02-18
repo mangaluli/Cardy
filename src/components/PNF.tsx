@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text, useColorModeValue } from "@chakra-ui/react";
+import { Button, Flex, Text } from "@chakra-ui/react";
 import { FunctionComponent } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeftIcon } from '@chakra-ui/icons';

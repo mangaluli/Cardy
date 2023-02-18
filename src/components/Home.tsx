@@ -17,7 +17,6 @@ const Home: FunctionComponent<HomeProps> = () => {
   return (
     <Flex
       flex='1'
-      border='1px solid black'
       flexDir='column'
       align='center'
       justify='center'

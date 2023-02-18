@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { FunctionComponent, useEffect } from "react";
 
 interface AboutProps { }

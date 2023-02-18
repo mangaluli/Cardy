@@ -5,7 +5,6 @@ import {
   Link,
   useDisclosure,
   HStack,
-  Avatar,
   Button,
   Menu,
   MenuButton,
@@ -23,7 +22,7 @@ import {
   AddIcon,
 } from '@chakra-ui/icons';
 
-import { FunctionComponent, useContext, useEffect, useState } from "react";
+import { FunctionComponent, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import { successMsg } from "../services/toastify";
@@ -63,7 +62,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
   const logout = () => {
     clearSesUserData();
     setUserData({ id: -2, email: '', name: '', isBusiness: false });
-    colorMode == 'dark' && toggleColorMode();
+    colorMode === 'dark' && toggleColorMode();
     navigate('/');
   }
 
@@ -189,8 +188,6 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
                       <MenuDivider />
                     </Box>
                   }
-                  <MenuItem onClick={() => navigate('profile')}>Profile</MenuItem>
-                  <MenuDivider />
                   <MenuItem onClick={() => navigate('loved-cards')}>Cards I love</MenuItem>
                   {userData.isBusiness && <MenuItem onClick={() => navigate('my-cards')}>My cards</MenuItem>}
                   <MenuItem onClick={toggleColorMode}>
