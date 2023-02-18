@@ -1,0 +1,211 @@
+{
+  "users": [
+    {
+      "email": "admin@example.com",
+      "password": "admin1234",
+      "name": "Admin",
+      "isBusiness": true,
+      "cardIds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "lovedCardIds": [],
+      "id": 1
+    },
+    {
+      "email": "user@example.com",
+      "password": "user1234",
+      "name": "User",
+      "isBusiness": false,
+      "cardIds": [],
+      "lovedCardIds": [],
+      "id": 2
+    }
+  ],
+  "cards": [
+    {
+      "info": {
+        "name": "Sugar Rush",
+        "date": 1676750679570,
+        "comment": "Step into the world of Sugar Rush and prepare to have your taste buds blown away. We've been perfecting the art of candy-making for years, and our passion for quality and flavor shines through in every bite. From fruity to chocolaty to downright indulgent, our candy selection will take you on a journey of sweet satisfaction. So come on in and let the rush of sugar make your day a little sweeter.",
+        "lovedByUserIds": [],
+        "ownerId": 1
+      },
+      "data": {
+        "themeId": 3,
+        "title": "Sugar Rush",
+        "description": "Indulging your sweet tooth with our mouth-watering selection of candies.",
+        "email": "SugarRush@company.com",
+        "phone": "+(123)456789",
+        "address": "STATE / CITY"
+      },
+      "id": 2
+    },
+    {
+      "info": {
+        "name": "Mystic Minds",
+        "date": 1676750795747,
+        "comment": "Mystic Minds is a community of curious souls who share a passion for magic, wonder, and exploration. We believe that magic is not just about casting spells or performing tricks, but about embracing the unknown and uncovering the mysteries of the universe. From our thought-provoking lectures to our interactive workshops, we create a space for our members to expand their minds, connect with others, and find inspiration in the world around them.",
+        "lovedByUserIds": [],
+        "ownerId": 1
+      },
+      "data": {
+        "themeId": 2,
+        "title": "Mystic Minds",
+        "description": "Exploring the mysteries of magic and the wonders of the universe.",
+        "email": "MysticMinds.com",
+        "phone": "",
+        "address": ""
+      },
+      "id": 3
+    },
+    {
+      "info": {
+        "name": "Pixel Perfect Card",
+        "date": 1676752785768,
+        "comment": "Crafting websites with precision and perfection, one pixel at a time. We understand that every detail matters in creating a successful online presence, and we're committed to delivering websites that not only look great but also function flawlessly. From the layout to the color scheme to the user interface, we meticulously fine-tune every element to ensure your website reflects your brand and resonates with your audience. With Pixel Perfect Web Design, your website will be a masterpiece that stands out in the crowded digital space.",
+        "lovedByUserIds": [],
+        "ownerId": 1
+      },
+      "data": {
+        "themeId": 1,
+        "title": "Pixel Perfect",
+        "description": "Crafting websites with precision and perfection, one pixel at a time.",
+        "email": "PixelPerfect@company.com",
+        "phone": "+(123)456789",
+        "address": "STATE / CITY"
+      },
+      "id": 1
+    },
+    {
+      "info": {
+        "name": "SitWell",
+        "date": 1676752935040,
+        "comment": "SitWell is a chair company that's dedicated to making sitting more comfortable and enjoyable. We believe that a great chair can transform your home or workspace, and that's why we've designed a range of high-quality chairs that are both stylish and ergonomic. Our chairs are made with premium materials and advanced technology for maximum comfort and support.",
+        "lovedByUserIds": [],
+        "ownerId": 1
+      },
+      "data": {
+        "themeId": 2,
+        "title": "SitWell",
+        "description": "Ergonomic chairs for home and office. SitWell, sit comfortably.",
+        "email": "SitWell@business.org",
+        "phone": "",
+        "address": "STATE / CITY"
+      },
+      "id": 4
+    }
+  ],
+  "themes": [
+    {
+      "bg": "gray.50",
+      "colors": [
+        "gray.900",
+        "gray.700",
+        "gray.500"
+      ],
+      "textAlign": "center",
+      "borderRadius": "2",
+      "flexDir": [
+        "column",
+        "column",
+        "column"
+      ],
+      "flexAlign": [
+        "center",
+        "center",
+        "center"
+      ],
+      "flexJustify": [
+        "center",
+        "center",
+        "center"
+      ],
+      "flexGap": [
+        "6",
+        "0",
+        "0"
+      ],
+      "previewColors": [
+        "gray.50",
+        "gray.900",
+        "gray.500"
+      ],
+      "id": 1
+    },
+    {
+      "bg": "gray.900",
+      "colors": [
+        "gray.50",
+        "gray.200",
+        "gray.400"
+      ],
+      "textAlign": "center",
+      "borderRadius": "2",
+      "flexDir": [
+        "column",
+        "column",
+        "column"
+      ],
+      "flexAlign": [
+        "center",
+        "center",
+        "center"
+      ],
+      "flexJustify": [
+        "center",
+        "center",
+        "center"
+      ],
+      "flexGap": [
+        "6",
+        "0",
+        "0"
+      ],
+      "previewColors": [
+        "gray.900",
+        "gray.50",
+        "gray.400"
+      ],
+      "id": 2
+    },
+    {
+      "bg": "pink.50",
+      "colors": [
+        "pink.900",
+        "pink.700",
+        "pink.500"
+      ],
+      "textAlign": "left",
+      "borderRadius": "12",
+      "flexDir": [
+        "row",
+        "column",
+        "column"
+      ],
+      "flexAlign": [
+        "left",
+        "flex-start",
+        "flex-end"
+      ],
+      "flexJustify": [
+        "space-between",
+        "center",
+        "center"
+      ],
+      "flexGap": [
+        "6",
+        "0",
+        "0"
+      ],
+      "previewColors": [
+        "pink.50",
+        "pink.700",
+        "pink.500"
+      ],
+      "id": 3
+    }
+  ]
+}
